@@ -6,11 +6,11 @@ use std::error::Error;
 async fn main() -> Result<(), Box<dyn Error>> {
 
     let aws_settings = AWSIoTSettings::new(
-        "id".to_owned(),
-        "/home/myuser/ca".to_owned(),
-        "/home/myuser/cert.crt".to_owned(),
-        "/home/myuser/key.pem".to_owned(),
-        "endpoint.amazonaws.com".to_owned(),
+        "Iot-boschecl2".to_owned(),
+        "/home/santosh/rust development/project_with_yashwanth/aws-iot-device-sdk-rust/AmazonRootCA3.pem".to_owned(),
+        "/home/santosh/rust development/project_with_yashwanth/aws-iot-device-sdk-rust/38912c2dc782b6f9e7f9e7f6cc7c1b0beb50a875f4fc171d7f4eb47901049d3a-certificate.pem.crt".to_owned(),
+        "/home/santosh/rust development/project_with_yashwanth/aws-iot-device-sdk-rust/38912c2dc782b6f9e7f9e7f6cc7c1b0beb50a875f4fc171d7f4eb47901049d3a-private.pem.key".to_owned(),
+        "a35lo5fxmqnlto-ats.iot.us-east-1.amazonaws.com".to_owned(),
         None,
     );
 
